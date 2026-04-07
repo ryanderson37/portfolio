@@ -28,7 +28,89 @@
         
         <link rel="stylesheet" href="assets/css/responsive.css">
         
-        </head>
+        <style>
+            /* Official MSU Green: #18453B */
+            :root {
+                --msu-green: #18453B;
+                --msu-green-hover: #0f2c25;
+            }
+            
+            /* Logo and Navbar Links */
+            .navbar-default .navbar-brand,
+            .navbar-default .navbar-nav > li > a:hover,
+            .navbar-default .navbar-nav > li > a:focus,
+            .navbar-default .navbar-nav > .active > a,
+            .navbar-default .navbar-nav > .active > a:hover,
+            .navbar-default .navbar-nav > .active > a:focus {
+                color: var(--msu-green) !important;
+            }
+            
+            /* Hero Section Accents and Button */
+            .welcome-hero .header-text h2 span { color: var(--msu-green) !important; }
+            .welcome-hero .header-text a {
+                background: var(--msu-green) !important;
+                border-color: var(--msu-green) !important;
+            }
+            .welcome-hero .header-text a:hover {
+                background: var(--msu-green-hover) !important;
+                border-color: var(--msu-green-hover) !important;
+            }
+            
+            /* Social Icons */
+            .about-list-icon ul li a,
+            .hm-foot-icon ul li a {
+                color: var(--msu-green) !important;
+                border-color: var(--msu-green) !important;
+            }
+            .about-list-icon ul li a:hover,
+            .hm-foot-icon ul li a:hover {
+                background: var(--msu-green) !important;
+                color: #fff !important;
+                border-color: var(--msu-green) !important;
+            }
+            
+            /* Timeline Dots and Lines */
+            .timeline-horizontal-border i,
+            .timeline-content h4.title span i {
+                color: var(--msu-green) !important;
+            }
+            
+            /* Progress Bars */
+            .progress-bar {
+                background-color: var(--msu-green) !important;
+            }
+            
+            /* Portfolio & Profile Overlays (with slight transparency) */
+            .single-profile-overlay,
+            .isotope-overlay {
+                background: rgba(24, 69, 59, 0.85) !important;
+            }
+            
+            /* Contact Button */
+            .contact-btn {
+                background: var(--msu-green) !important;
+                border-color: var(--msu-green) !important;
+            }
+            .contact-btn:hover {
+                background: var(--msu-green-hover) !important;
+                border-color: var(--msu-green-hover) !important;
+            }
+            
+            /* Form Fields Focus Border */
+            .form-control:focus {
+                border-color: var(--msu-green) !important;
+            }
+            
+            /* Scroll to top button */
+            .return-to-top {
+                background: var(--msu-green) !important;
+            }
+            .return-to-top:hover {
+                background: var(--msu-green-hover) !important;
+            }
+        </style>
+
+    </head>
 	
 	<body>
 		<header class="top-area">
