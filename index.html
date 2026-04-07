@@ -100,16 +100,21 @@
                 background: rgba(24, 69, 59, 0.85) !important;
             }
             
-            /* Contact Button */
-            .contact-btn,
-            .single-contact-btn .contact-btn {
+            /* Contact Button - Max Specificity to Override Template Button Colors */
+            button.contact-btn,
+            .single-contact-btn .contact-btn,
+            .single-contact-box .contact-form .single-contact-btn button.contact-btn {
                 background: var(--msu-green) !important;
-                border-color: var(--msu-green) !important;
+                background-color: var(--msu-green) !important;
+                border: 1px solid var(--msu-green) !important;
+                color: #fff !important;
             }
-            .contact-btn:hover,
-            .single-contact-btn .contact-btn:hover {
+            button.contact-btn:hover,
+            .single-contact-btn .contact-btn:hover,
+            .single-contact-box .contact-form .single-contact-btn button.contact-btn:hover {
                 background: var(--msu-green-hover) !important;
-                border-color: var(--msu-green-hover) !important;
+                background-color: var(--msu-green-hover) !important;
+                border: 1px solid var(--msu-green-hover) !important;
             }
             
             /* Form Fields Focus Border */
